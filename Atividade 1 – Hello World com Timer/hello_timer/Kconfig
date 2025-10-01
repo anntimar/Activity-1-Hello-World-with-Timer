@@ -1,0 +1,13 @@
+menu "Hello Timer Options"
+
+config HELLO_PERIOD_MS
+    int "Período do timer (ms)"
+    default 1000
+    help
+      Intervalo em milissegundos para o disparo periódico do timer
+      que imprime a mensagem 'Hello World'.
+
+endmenu
+
+# IMPORTANTE: inclui os símbolos do Zephyr (LOG, etc.)
+rsource "Kconfig.zephyr"
